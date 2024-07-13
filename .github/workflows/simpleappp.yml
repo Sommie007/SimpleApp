@@ -25,7 +25,7 @@ jobs:
         npm install
         npm run build --if-present
         npm run test --if-present
-      working-directory: ./github/workflows
+      working-directory: /*
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v3
       with: 
